@@ -95,3 +95,8 @@ List of installed packages
 - sudo, less, terminus-font
 - neofetch
 Can find all installed packages with pacman -Qe
+
+Things to look into:
+- pacman (usage + advanced tips + caching + repos + mirrors)
+- GUI
+-
