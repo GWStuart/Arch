@@ -1,0 +1,94 @@
+{
+    "layer": "top",
+
+    "modules-left": ["hyprland/workspaces", "backlight", "pulseaudio"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["network", "battery", "clock"],
+
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+	    "1": "I",
+	    "2": "II",
+	    "3": "III",
+	    "4": "IV",
+	    "5": "V",
+	    "6": "VI",
+	    "7": "VII",
+	    "8": "VIII",
+	    "9": "IX",
+	    "10": "X",
+	    "default": "~"
+	},
+        "persistent-workspaces": {
+            "*": 5
+        }	
+    },
+    
+    "hyprland/window": {
+	"format": "{initialTitle}",
+        "max-length": 50
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+   
+     
+    "network": {
+        "format-wifi": "",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a, %d/%m/%g}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "actions":  {
+                "on-click-right": "mode",
+                "on-click-forward": "tz_up",
+                "on-click-backward": "tz_down",
+                "on-scroll-up": "shift_up",
+                "on-scroll-down": "shift_down"
+                }
+    },
+
+    "group/power": {
+	"orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false,
+        },
+        "modules": [
+            "custom/power", // First element is the "group leader" and won't ever be hidden
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot",
+        ]
+    },
+    "custom/quit": {
+        "format": "󰗼",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/lock": {
+        "format": "󰍁",
+        "tooltip": false,
+        "on-click": "swaylock"
+    },
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip": false,
+        "on-click": "reboot"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "shutdown now"
+    }
+}
