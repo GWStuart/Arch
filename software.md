@@ -1,7 +1,7 @@
 # AUR helper
 I typically go for yay (yet another yoghurt)
 
-# Electron apps
+# Electron apps (for wayland)
 I like using some electron apps such as `obsidian`
 However these typically use xwayalnd by default resulting in them looking blurry
 
