@@ -10,14 +10,17 @@ Start hyprland by running the command `Hyprland`
 # Getting started
 Exit Hyprlan with `mod + m` (I think)
 
-Install pacakages: `alacritty`
-Replace the hyprland config file located at, `~/.config/hypr/hyprland.conf`
+Install pacakages: `alacritty`, `wofi`
+
+Copy the following folders into `~/.config/`:
+- hypr
+
 Copy the `Scripts` folder and move it to `~/Scripts`
 
 # Software
 
 ## AUR helper (yay)
-idk pretty easy to isntall
+I personally use `yay` however could give a look at alternatives in future
 
 ## Audio visualiser (cava)
 Install with `yay -S cava`
