@@ -87,8 +87,6 @@ Next setup sudo:
 - edit /etc/sudoers and uncomment `# %wheel ALL=(ALL) ALL` do this with the `visudo` command
     export `vim` as the editor since by default it looks for `vi`
  
-
-
 # Additional stuff
 List of installed packages
 - base, linux, linux-firmware, vim, networkmanager, grub
@@ -100,3 +98,9 @@ Things to look into:
 - pacman (usage + advanced tips + caching + repos + mirrors)
 - GUI
 -
+
+# Configurations for laptop
+If installing a system on a laptop then see this section for additional configuratinos.
+This closely follows the archlinux wiki's laptop page.
+
+
