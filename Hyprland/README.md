@@ -10,7 +10,10 @@ Start hyprland by running the command `Hyprland`
 # Getting started
 Exit Hyprlan with `mod + m` (I think)
 
-Install pacakages: `alacritty`, `wofi`
+Install pacakages: 
+- `alacritty` as a terminal
+- `wofi` as an application launcher
+- `swaylock` & `swayidle` for idle management (laptop only)
 
 Copy the following folders into `~/.config/`:
 - hypr
