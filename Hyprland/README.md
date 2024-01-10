@@ -17,8 +17,10 @@ Install pacakages:
 
 Copy the following folders into `~/.config/`:
 - hypr
+- alacritty
 
-Copy the `Scripts` folder and move it to `~/Scripts`
+Copy the following folders into the home directory:
+- Scripts
 
 # Software
 
@@ -39,3 +41,6 @@ sudo chmod a+wr /opt/spotify/Apps -R
 ```
 
 Then install the spicetify marketplace
+
+# File Manager
+use `ranger` as a terminal file viewer
