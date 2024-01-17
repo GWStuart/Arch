@@ -1,81 +1,36 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
+    color: #ffffff;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 1);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: rgb(43, 48, 59);
+    border-bottom: 3px solid rgb(71, 81, 91);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #33ccff;
+    background: rgb(34, 38, 47);
 }
 
-#workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
+#workspaces button { padding: 0 5px; }
 
 #workspaces button.active {
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
+    background: rgb(34, 38, 47);
+    box-shadow: inset 0 -3px #33ccff;
 }
 
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
+#workspaces button.urgent { box-shadow: inset 0 -3px #ff3333; }
 
 #clock,
 #battery,
@@ -94,7 +49,7 @@ button:hover {
 #scratchpad,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    background-color: transparent
 }
 
 #window,
@@ -113,13 +68,10 @@ button:hover {
 }
 
 #clock {
-    background-color: transparent;
 }
 
 #battery {
-    /* background-color: #ffffff; */
     color: #ffffff;
-    background-color: transparent;
 }
 
 #battery.charging, #battery.plugged {
@@ -174,8 +126,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    box-shadow: inset 0 -3px #f53c3c;
 }
 
 #wireplumber {

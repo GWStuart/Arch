@@ -5,6 +5,11 @@
     "modules-center": ["hyprland/window"],
     "modules-right": ["network", "battery", "clock"],
 
+    "image#icon": {
+        "path": "/home/will/.config/waybar/icon.png",
+        "size": 16 
+    },
+
     "hyprland/workspaces": {
 	"format": "{icon}",
 	"format-icons": {
@@ -37,8 +42,8 @@
    
      
     "network": {
-        "format-wifi": "",
-        "format-disconnected": "", //An empty format will hide the module.
+        "format-wifi": "󰤨",
+        "format-disconnected": "󰤭", //An empty format will hide the module.
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50
@@ -90,5 +95,5 @@
         "format": "",
         "tooltip": false,
         "on-click": "shutdown now"
-    }
+    },
 }
