@@ -1,0 +1,7 @@
+[colors.primary]
+background = "#2B2D3A"
+foreground = "#c5c8c6"
+
+[window.padding]
+x = 5
+y = 5
