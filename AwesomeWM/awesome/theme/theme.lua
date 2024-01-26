@@ -1,6 +1,6 @@
----------------------------
--- Default awesome theme --
----------------------------
+-------------------------------------
+-- Slightly modified awesome theme --
+-------------------------------------
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
@@ -69,39 +69,7 @@ theme.menu_submenu_icon = themes_path.."/submenu.png"
 theme.menu_height = dpi(15)
 theme.menu_width  = dpi(100)
 
--- You can add as many variables as
--- you wish and access them by using
--- beautiful.variable in your rc.lua
---theme.bg_widget = "#cc0000"
-
 theme.wallpaper = themes_path.."/backgrounds/unknown-anime-sunset.jpg"
-
--- You can use your own layout icons like this:
-theme.layout_fairh = themes_path.."/layouts/fairhw.png"
-theme.layout_fairv = themes_path.."/layouts/fairvw.png"
-theme.layout_floating  = themes_path.."/layouts/floatingw.png"
-theme.layout_magnifier = themes_path.."/layouts/magnifierw.png"
-theme.layout_max = themes_path.."/layouts/maxw.png"
-theme.layout_fullscreen = themes_path.."/layouts/fullscreenw.png"
-theme.layout_tilebottom = themes_path.."/layouts/tilebottomw.png"
-theme.layout_tileleft   = themes_path.."/layouts/tileleftw.png"
-theme.layout_tile = themes_path.."/layouts/tilew.png"
-theme.layout_tiletop = themes_path.."/layouts/tiletopw.png"
-theme.layout_spiral  = themes_path.."/layouts/spiralw.png"
-theme.layout_dwindle = themes_path.."/layouts/dwindlew.png"
-theme.layout_cornernw = themes_path.."/layouts/cornernww.png"
-theme.layout_cornerne = themes_path.."/layouts/cornernew.png"
-theme.layout_cornersw = themes_path.."/layouts/cornersww.png"
-theme.layout_cornerse = themes_path.."/layouts/cornersew.png"
-
--- Generate Awesome icon:
-theme.awesome_icon = theme_assets.awesome_icon(
-    theme.menu_height, theme.bg_focus, theme.fg_focus
-)
-
--- Define the icon theme for application icons. If not set then the icons
--- from /usr/share/icons and /usr/share/icons/hicolor will be used.
-theme.icon_theme = nil
 
 return theme
 
