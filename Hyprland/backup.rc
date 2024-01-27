@@ -1,0 +1,6 @@
+alias suspend="systemctl suspend"
+
+# My projects
+alias pman="python ~/github/pman/pman.py"
+alias todo="~/github/pretty-markdown/venv/bin/python ~/github/pretty-markdown/todo.py"
+alias render="~/github/ascii-video-player/venv/bin/python ~/github/ascii-video-player/render.py"
